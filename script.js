@@ -31,11 +31,11 @@ function checkSchool () {
   } else {
     // If user is both between 5 and 19 years of age, and the day is not Saturday or Sunday, send the below message.
     if ((userAge >= 5 && userAge < 18) && (userDay !== 'SATURDAY' && userDay !== 'SUNDAY')) {
-    document.getElementById('output').innerHTML = 'Time for school!'
+      document.getElementById('output').innerHTML = 'Time for school!'
 
     // If the above conditions are false because the user is above 18, send this message.
     } else if ((userAge > 18) && (userDay !== 'SATURDAY' && userDay !== 'SUNDAY')) {
-    document.getElementById('output').innerHTML = 'Time to go to work!'
+      document.getElementById('output').innerHTML = 'Time to go to work!'
 
     // If the user's age is less than 5, send this message instead.
     } else if (userAge < 5) {
